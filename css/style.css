@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+JP:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend+Deca:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --white: #FFFFFF;
+    --yellow: #FCB72B;
+    --darkNavy: #495567;
+    --dimGrey: #939CAA;
+    --lightGrey: #E5ECF4;
+    --snow: #F2F5F9;
+    --lightYellow: #FFF4DF;
 }
 
 /* Header */
@@ -36,8 +49,10 @@
     margin: 0 1.5rem;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 769px) {}
 
+/*@media screen and (max-width: 376px) {
+    
     .navBar {
         padding: 0;
     }
@@ -96,4 +111,53 @@
     .mobile-menu {
         margin-left: 0;
     }
+}
+
+/* Intro home */
+
+.intro-section {
+    display: flex;
+    position: relative;
+    background-image: url('../images/bitmap.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: var(--white);
+    font-family: 'Space Mono';
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    height: 650px;
+}
+
+.intro-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -1.79px;
+}
+
+.intro-content p {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    margin: 24px 0;
+}
+
+.intro-getButton {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--yellow);
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.intro-fleche {
+    position: absolute;
+    top: 542px;
+    left: -312px;
 }
