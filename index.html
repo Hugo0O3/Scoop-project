@@ -47,5 +47,21 @@
 
     </footer>
 </body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+    const menuHamburgerClose = document.querySelector(".menu-hamburger-close")
 
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+        menuHamburger.style.display = "none"
+        menuHamburgerClose.style.display = "block"
+    });
+
+    menuHamburgerClose.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-menu')
+        menuHamburger.style.display = "block"
+        menuHamburgerClose.style.display = "none"
+    });
+</script>
 </html>
