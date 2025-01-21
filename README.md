@@ -4,7 +4,7 @@
 |:---------------------|:------------------------------------------------------------|
 | Repository           | `Scoot`                                               |
 | Challenge type       | `Consolidation`                                             |
-| Duration             | `4 days`                                                    |
+| Duration             | `5 days`                                                    |
 | Deployment method    | `GitHub pages`                                              |
 | Group composition    | `Duos`                                                      |
 
