@@ -18,6 +18,10 @@
     --darkMediumNavy: #333A44;
 }
 
+main {
+    padding-top: 4rem;
+}
+
 /* Header */
 
 .navBar {
@@ -29,7 +33,7 @@
     width: 100%;
     position: fixed;
     z-index: 10;
-    height: 5rem;
+    height: 4rem;
 }
 
 .navBar img {
@@ -195,7 +199,7 @@
 }
 
 /* Learn more sections home page */
-.learn-more-section{
+.learn-more-section {
     display: flex;
     position: relative;
     padding: 0 2rem;
@@ -207,14 +211,14 @@
     gap: 5rem;
 }
 
-.learn-more{
+.learn-more {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.learn__more__img{
+.learn__more__img {
     border-radius: 100%;
     object-fit: contain;
     width: 100%;
@@ -223,19 +227,20 @@
     margin-bottom: 0;
 }
 
-.learn__more__h3{
+.learn__more__h3 {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
     color: var(--darkNavy)
 }
 
-.learn__more__description{
+.learn__more__description {
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
     color: var(--dimGrey);
 }
+
 /* il est 9h34 petit commentaire pour le début du footer 💁‍♂️ */
 
 footer h2 {
@@ -308,7 +313,7 @@ footer .footerBottom a {
     color: var(--dimGrey);
 }
 
-footer .footerBottom .footerBottom-container {
+footer .footerBottom .footerBottom-Fcontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -332,4 +337,31 @@ footer .footerBottom h2 {
     line-height: 3rem;
     font-size: 2.5rem;
     padding-bottom: 2.5rem;
+}
+
+.banner {
+    height: 160px;
+    /* Exemple de hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Space Mono';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.banner-about {
+    background-image: url('../images/aboutBanner.png');
+}
+
+.banner-careers {
+    background-image: url('../images/aboutCareers.png');
+}
+
+.banner-locations {
+    background-image: url('../images/aboutLocations.png');
 }
