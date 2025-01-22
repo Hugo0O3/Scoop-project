@@ -99,26 +99,55 @@
                 <a href="learnMore.html" class="intro-getButton">Learn More</a>
             </div>
         </section>
-
     </main>
-
     <footer>
-
+        <section>
+            <section class="footerTop">
+                <section class="footerTop-container">
+                    <h2>Sign up and Scoot off today</h2>
+                    <img src="images/appStore.png" alt="appStoreImage">
+                    <img src="images/googlePlay.png" alt="googlePlayImage">
+                </section>
+                <img class="fondFooterTop-left" src="images/rondPasRempli.png" alt="rondPasRempli">
+                <img class="fondFooterTop-right" src="images/rondRempli.png" alt="rondRempli">
+            </section>
+        </section>
+        <section>
+            <section class="footerBottom">
+                <section class="footerBottom-container">
+                    <h2>scoot</h2>
+                        <section class="footerBottom-links">
+                            <a href="Scoop-Project/about.html">About</a>
+                            <a href="Scoop-Project/locations.html">Location</a>
+                            <a href="Scoop-Project/careers.html">Careers</a>
+                        </section>
+                        <section class="footerBottom-images">
+                            <img src="images/facebookLogo.png" alt="facebookLogo">
+                            <img src="images/TwitterLogo.png" alt="TwitterLogo">
+                            <img src="images/InstagramLogo.png" alt="InstagramLogo">
+                        </section>
+                    </section>
+                </section>
+            </section>
     </footer>
 </body>
+
 <script>
     const menuHamburger = document.querySelector(".menu-hamburger")
     const navLinks = document.querySelector(".nav-links")
     const menuHamburgerClose = document.querySelector(".menu-hamburger-close")
+    // const mainContainer = document.querySelector('.main-container')
 
     menuHamburger.addEventListener('click', () => {
         navLinks.classList.toggle('mobile-menu')
+        // mainContainer.classList.add('.main-container')
         menuHamburger.style.display = "none"
         menuHamburgerClose.style.display = "block"
     });
 
     menuHamburgerClose.addEventListener('click', () => {
         navLinks.classList.remove('mobile-menu')
+        // mainContainer.classList.remove('.main-container')
         menuHamburger.style.display = "block"
         menuHamburgerClose.style.display = "none"
     });
