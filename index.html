@@ -136,18 +136,18 @@
     const menuHamburger = document.querySelector(".menu-hamburger")
     const navLinks = document.querySelector(".nav-links")
     const menuHamburgerClose = document.querySelector(".menu-hamburger-close")
-    // const mainContainer = document.querySelector('.main-container')
+    // const main = document.main()
 
     menuHamburger.addEventListener('click', () => {
         navLinks.classList.toggle('mobile-menu')
-        // mainContainer.classList.add('.main-container')
+        // main.classList.add()
         menuHamburger.style.display = "none"
         menuHamburgerClose.style.display = "block"
     });
 
     menuHamburgerClose.addEventListener('click', () => {
         navLinks.classList.remove('mobile-menu')
-        // mainContainer.classList.remove('.main-container')
+        // main.classList.remove('main')
         menuHamburger.style.display = "block"
         menuHamburgerClose.style.display = "none"
     });
