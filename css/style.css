@@ -195,7 +195,7 @@
 }
 
 /* Learn more sections home page */
-.learn-more-section{
+.learn-more-section {
     display: flex;
     position: relative;
     padding: 0 2rem;
@@ -207,14 +207,14 @@
     gap: 5rem;
 }
 
-.learn-more{
+.learn-more {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.learn__more__img{
+.learn__more__img {
     border-radius: 100%;
     object-fit: contain;
     width: 100%;
@@ -223,19 +223,20 @@
     margin-bottom: 0;
 }
 
-.learn__more__h3{
+.learn__more__h3 {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
     color: var(--darkNavy)
 }
 
-.learn__more__description{
+.learn__more__description {
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
     color: var(--dimGrey);
 }
+
 /* il est 9h34 petit commentaire pour le début du footer 💁‍♂️ */
 
 footer h2 {
@@ -332,4 +333,44 @@ footer .footerBottom h2 {
     line-height: 3rem;
     font-size: 2.5rem;
     padding-bottom: 2.5rem;
+}
+
+/* il est 14h39 début média queries tablet */
+
+@media (min-width: 768px) {
+
+    footer .footerTop h2 {
+        font-family: 'Space Mono';
+        letter-spacing: -2.14px;
+        color: white;
+        padding: 0;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    footer .footerBottom h2 {
+        padding: 0;
+    }
+
+    footer .footerTop {
+        background-color: var(--darkNavy);
+        width: 100%;
+        height: 18.75rem;
+    }
+
+    footer .footerBottom {
+        height: 6rem;
+    }
+
+    footer .footerBottom .footerBottom-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .footerBottom .footerBottom-links {
+        flex-direction: row;
+        text-align: center;
+        gap: 1rem;
+        padding: 0 9.563rem 0 3.661rem;
+    }
 }
