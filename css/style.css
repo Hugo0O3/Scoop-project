@@ -75,7 +75,7 @@
     position: absolute;
     background-color: #333A44;
     width: 72%;
-    height: calc(100vh - 5rem);
+    height: calc(100dvh - 5rem);
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -103,6 +103,10 @@
 .mobile-menu {
     margin-left: 0;
 }
+
+/* .main-container {
+    opacity: 0.7;
+} */
 
 /* Intro home */
 
@@ -165,7 +169,7 @@
 }
 
 
-.step__title{
+.step__title {
     font-family: 'Space Mono';
     color: var(--darkNavy);
     font-size: 20px;
@@ -174,7 +178,7 @@
     letter-spacing: -0.89px;
 }
 
-.step__description{
+.step__description {
     font-family: 'Lexend Deca';
     color: var(--dimGrey);
     font-size: 15px;
@@ -186,5 +190,103 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem; 
+    gap: 1.5rem;
+}
+
+/* il est 9h34 petit commentaire pour le début du footer 💁‍♂️ */
+
+footer h2 {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    letter-spacing: -1.43px;
+    text-align: center;
+    color: white;
+}
+
+footer .footerTop {
+    background-color: var(--darkNavy);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+footer .footerTop .fondFooterTop-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+footer .footerTop .fondFooterTop-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+footer .footerTop h2 {
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+footer .footerTop .footerTop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.804rem;
+    padding: 0rem 2rem;
+}
+
+footer .footerTop .fondFooterTop img {
+    position: absolute;
+}
+
+footer .footerBottom {
+    background-color: var(--darkMediumNavy);
+    width: 100%;
+    height: 27.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footerBottom a {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    text-decoration: none;
+    color: var(--dimGrey);
+}
+
+footer .footerBottom .footerBottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footerBottom .footerBottom-links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5.313rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+footer .footerBottom .footerBottom-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+footer .footerBottom h2 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
 }
