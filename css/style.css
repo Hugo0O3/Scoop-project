@@ -46,8 +46,10 @@
     text-align: center;
     margin: 0 auto;
     color: var(--darkNavy);
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-family: 'Space Mono';
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -2px;
 }
 
 .navBar .menu-hamburger {
@@ -152,6 +154,8 @@
     top: 30rem;
     left: -20rem;
 }
+
+/* Steps home page*/
 
 .steps {
     display: flex;
