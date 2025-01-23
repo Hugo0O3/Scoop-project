@@ -287,7 +287,7 @@ footer .footerTop .footerTop-container {
     padding: 0rem 2rem;
 }
 
-footer .footerTop .fondFooterTop img {
+footer .footerTop .fondFooterTop .fondFooterTop-left, .fondFooterTop-mid, .fondFooterTop-right img {
     position: absolute;
 }
 
@@ -372,5 +372,12 @@ footer .footerBottom h2 {
         text-align: center;
         gap: 1rem;
         padding: 0 9.563rem 0 3.661rem;
+    }
+
+    footer .footerTop .fondFooterTop-mid {
+        position: absolute;
+        bottom: 0;
+        right: 10;
+        z-index: 1;
     }
 }
