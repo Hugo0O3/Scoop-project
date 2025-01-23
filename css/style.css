@@ -203,7 +203,7 @@ main {
 }
 
 /* Learn more sections home page */
-.learn-more-section {
+.content-section {
     display: flex;
     position: relative;
     padding: 0 2rem;
@@ -215,30 +215,32 @@ main {
     gap: 5rem;
 }
 
-.learn-more {
+.content-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.learn__more__img {
+.content__img {
     border-radius: 100%;
-    object-fit: contain;
-    width: 100%;
     max-width: 445px;
     height: auto;
     margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Remplit le conteneur tout en gardant le bon ratio */
 }
 
-.learn__more__h3 {
+.content__h3 {
+    font-family: 'Space Mono';
     font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
     color: var(--darkNavy)
 }
 
-.learn__more__description {
+.content__description {
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -317,7 +319,7 @@ footer .footerBottom a {
     color: var(--dimGrey);
 }
 
-footer .footerBottom .footerBottom-Fcontainer {
+footer .footerBottom .footerBottom-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,6 +345,8 @@ footer .footerBottom h2 {
     padding-bottom: 2.5rem;
 }
 
+/* Image setup for header page */
+
 .banner {
     height: 160px;
     /* Exemple de hauteur */
@@ -356,7 +360,9 @@ footer .footerBottom h2 {
     font-family: 'Space Mono';
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 5rem;
 }
+
 
 .banner-about {
     background-image: url('../images/aboutBanner.png');
@@ -368,6 +374,29 @@ footer .footerBottom h2 {
 
 .banner-locations {
     background-image: url('../images/aboutLocations.png');
+}
+
+/* About section */
+
+.img-wrapper {
+    width: 100%; /* Laisse la largeur s'adapter au conteneur parent */
+    max-width: 400px; /* Taille maximale pour limiter la largeur sur des écrans larges */
+    aspect-ratio: 1; /* Assure un conteneur carré (1:1) */
+    border-radius: 50%; /* Rend le conteneur rond */
+    overflow: hidden; /* Cache tout ce qui dépasse du cercle */
+    margin: 0 auto; /* Centre le wrapper */
+}
+
+.about__img {
+
+}
+
+.our__values{
+    gap: 0;
+}
+
+.our__values .content__h3{
+    padding-bottom: 2rem;
 }
 
 /* il est 14h39 début média queries tablet */
