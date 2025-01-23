@@ -18,6 +18,10 @@
     --darkMediumNavy: #333A44;
 }
 
+main {
+    padding-top: 4rem;
+}
+
 /* Header */
 
 .navBar {
@@ -29,7 +33,7 @@
     width: 100%;
     position: fixed;
     z-index: 10;
-    height: 5rem;
+    height: 4rem;
 }
 
 .navBar img {
@@ -77,7 +81,7 @@
     position: absolute;
     background-color: #333A44;
     width: 72%;
-    height: calc(100vh - 5rem);
+    height: calc(100dvh - 5rem);
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -106,6 +110,10 @@
     margin-left: 0;
 }
 
+/* .main-container {
+    opacity: 0.7;
+} */
+
 /* Intro home */
 
 .intro-section {
@@ -122,6 +130,7 @@
     text-align: center;
     padding: 0 2rem;
     height: 650px;
+    margin-bottom: 5rem;
 }
 
 .intro-content h1 {
@@ -147,6 +156,7 @@
     line-height: 25px;
     color: var(--white);
     text-decoration: none;
+    margin: 0 auto;
 }
 
 .intro-fleche {
@@ -162,14 +172,13 @@
     flex-direction: column;
     gap: 3rem;
     align-items: center;
-    padding-top: 5rem;
     text-align: center;
     padding: 0 2rem;
-    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 
-.step__title{
+.step__title {
     font-family: 'Space Mono';
     color: var(--darkNavy);
     font-size: 20px;
@@ -178,7 +187,7 @@
     letter-spacing: -0.89px;
 }
 
-.step__description{
+.step__description {
     font-family: 'Lexend Deca';
     color: var(--dimGrey);
     font-size: 15px;
@@ -190,5 +199,213 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem; 
+    gap: 1.5rem;
+}
+
+/* Learn more sections home page */
+.learn-more-section {
+    display: flex;
+    position: relative;
+    padding: 0 2rem;
+    font-family: 'Space Mono';
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    gap: 5rem;
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.learn__more__img {
+    border-radius: 100%;
+    object-fit: contain;
+    width: 100%;
+    max-width: 445px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.learn__more__h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--darkNavy)
+}
+
+.learn__more__description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--dimGrey);
+}
+
+/* il est 9h34 petit commentaire pour le début du footer 💁‍♂️ */
+
+footer h2 {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    letter-spacing: -1.43px;
+    text-align: center;
+    color: white;
+}
+
+footer .footerTop {
+    background-color: var(--darkNavy);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+footer .footerTop .fondFooterTop-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+footer .footerTop .fondFooterTop-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+footer .footerTop h2 {
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+footer .footerTop .footerTop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.804rem;
+    padding: 0rem 2rem;
+}
+
+footer .footerTop .fondFooterTop img {
+    position: absolute;
+}
+
+footer .footerBottom {
+    background-color: var(--darkMediumNavy);
+    width: 100%;
+    height: 27.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footerBottom a {
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    text-decoration: none;
+    color: var(--dimGrey);
+}
+
+footer .footerBottom .footerBottom-Fcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footerBottom .footerBottom-links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5.313rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+footer .footerBottom .footerBottom-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+footer .footerBottom h2 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.banner {
+    height: 160px;
+    /* Exemple de hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Space Mono';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.banner-about {
+    background-image: url('../images/aboutBanner.png');
+}
+
+.banner-careers {
+    background-image: url('../images/aboutCareers.png');
+}
+
+.banner-locations {
+    background-image: url('../images/aboutLocations.png');
+}
+
+/* il est 14h39 début média queries tablet */
+
+@media (min-width: 768px) {
+
+    footer .footerTop h2 {
+        font-family: 'Space Mono';
+        letter-spacing: -2.14px;
+        color: white;
+        padding: 0;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    footer .footerBottom h2 {
+        padding: 0;
+    }
+
+    footer .footerTop {
+        background-color: var(--darkNavy);
+        width: 100%;
+        height: 18.75rem;
+    }
+
+    footer .footerBottom {
+        height: 6rem;
+    }
+
+    footer .footerBottom .footerBottom-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .footerBottom .footerBottom-links {
+        flex-direction: row;
+        text-align: center;
+        gap: 1rem;
+        padding: 0 9.563rem 0 3.661rem;
+    }
 }
