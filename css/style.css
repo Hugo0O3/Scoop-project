@@ -398,10 +398,6 @@ footer .footerBottom h2 {
     margin: 0 auto; /* Centre le wrapper */
 }
 
-.about__img {
-
-}
-
 .our__values{
     gap: 0;
 }
@@ -488,7 +484,7 @@ footer .footerBottom h2 {
     }
 
     footer .footerTop .fondFooterTop-mid {
-      left: 27.25rem;
+        left: 27.25rem;
     }
 
     footer .footerTop .fondFooterTop-right {
@@ -522,7 +518,7 @@ footer .footerBottom h2 {
     }
 
     footer .footerTop .fondFooterTop-mid {
-      left: 49rem;
+        left: 49rem;
     }
 
     footer .footerTop .fondFooterTop-right {
