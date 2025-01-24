@@ -22,6 +22,14 @@ main {
     padding-top: 4rem;
 }
 
+/* tablet */
+
+@media (min-width: 768px) {
+    main {
+        padding-top: 6rem;
+    }
+}
+
 /* opacité */
 
 .opacity {
@@ -410,12 +418,26 @@ footer .footerBottom .footerBottom-links {
     flex-direction: column;
     padding-bottom: 5.313rem;
     text-align: center;
+    transition: 0.3s ease;
+}
+
+footer .footerBottom .footerBottom-links a:hover {
+    color: var(--yellow);
 }
 
 footer .footerBottom .footerBottom-images {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1.5rem;
+}
+
+.footerBottom-reseaux {
+    transition: 0.3s ease;
+}
+
+.footerBottom-reseaux:hover svg path {
+    fill: white;
 }
 
 footer .footerBottom h2 {
