@@ -9,18 +9,34 @@
 </head>
 
 <body>
+    <div class="opacity"></div>
     <header>
         <section>
             <nav class="navBar">
-                <img src="../images/Group.svg" alt="menu hamburger" class="menu-hamburger">
-                <img src="../images/GroupCroix.svg" alt="menu hamburger close" class="menu-hamburger-close">
-                <a class="logo" href="../index.html">scoot</a>
+                <img src="images/Group.svg" alt="menu hamburger" class="menu-hamburger">
+                <img src="images/GroupCroix.svg" alt="menu hamburger close" class="menu-hamburger-close">
+                <a class="logo" href="index.html">scoot</a>
                 <section class="nav-links">
                     <ul>
                         <li><a href="about.html">About</a></li>
                         <li><a href="locations.html">Location</a></li>
                         <li><a href="careers.html">Careers</a></li>
                     </ul>
+                    <a href="#explore" class="intro-getButton">Get Scootin</a>
+                </section>
+            </nav>
+            <nav class="navBarPasMobile">
+                <section class="navbarLeftpasMobile">
+                    <a class="logoPasMobile" href="index.html">scoot</a>
+                    <section class="nav-linksPasMobile">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="locations.html">Location</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="boutonPasMobile">
                     <a href="#explore" class="intro-getButton">Get Scootin</a>
                 </section>
             </nav>
@@ -37,7 +53,8 @@
         <section class="content-section">
             <div class="content-item">
                 <div class="img-wrapper">
-                    <img class="content__img about__img" src="../images/aboutPhoneLooking.png" alt="Someone looking his phone">
+                    <img class="content__img about__img" src="../images/aboutPhoneLooking.png"
+                        alt="Someone looking his phone">
                 </div>
                 <!-- <img src="./images/Group 8 Copy.svg" alt="fleche" class="learnMore-fleche"> -->
                 <h3 class="content__h3">Mobility for the digital era</h3>
@@ -52,7 +69,7 @@
                 </div>
                 <!-- <img src="./images/Group 8 Copy.svg" alt="fleche" class="learnMore-fleche"> -->
                 <h3 class="content__h3">Better urban living</h3>
-                <p class="content__description">We’re helping connect cities and bring people closer together. 
+                <p class="content__description">We’re helping connect cities and bring people closer together.
                     Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.
                 </p>
             </div>
@@ -70,11 +87,14 @@
             <section class="footerTop">
                 <section class="footerTop-container">
                     <h2>Sign up and Scoot off today</h2>
-                    <img src="../images/appStore.png" alt="appStoreImage">
-                    <img src="../images/googlePlay.png" alt="googlePlayImage">
+                    <section class="footerTop-telechargement">
+                        <img src="images/appStore.png" alt="appStoreImage">
+                        <img src="images/googlePlay.png" alt="googlePlayImage">
+                    </section>
                 </section>
-                <img class="fondFooterTop-left" src="../images/rondPasRempli.png" alt="rondPasRempli">
-                <img class="fondFooterTop-right" src="../images/rondRempli.png" alt="rondRempli">
+                <img class="fondFooterTop-left" src="images/rondVideMaisDemiRond.png" alt="rondVideMaisDemiRond">
+                <img class="fondFooterTop-mid" src="images/rondVideMaisDemiRond.png" alt="rondVideMaisDemiRond">
+                <img class="fondFooterTop-right" src="images/rondRempli.png" alt="rondRempli">
             </section>
         </section>
         <section>
@@ -87,34 +107,15 @@
                         <a href="careers.html">Careers</a>
                     </section>
                     <section class="footerBottom-images">
-                        <img src="../images/facebookLogo.png" alt="facebookLogo">
-                        <img src="../images/TwitterLogo.png" alt="TwitterLogo">
-                        <img src="../images/InstagramLogo.png" alt="InstagramLogo">
+                        <img src="images/facebookLogo.png" alt="facebookLogo">
+                        <img src="images/TwitterLogo.png" alt="TwitterLogo">
+                        <img src="images/InstagramLogo.png" alt="InstagramLogo">
                     </section>
                 </section>
             </section>
         </section>
     </footer>
 </body>
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
-    const menuHamburgerClose = document.querySelector(".menu-hamburger-close")
-    // const main = document.main()
-
-    menuHamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile-menu')
-        // main.classList.add()
-        menuHamburger.style.display = "none"
-        menuHamburgerClose.style.display = "block"
-    });
-
-    menuHamburgerClose.addEventListener('click', () => {
-        navLinks.classList.remove('mobile-menu')
-        // main.classList.remove('main')
-        menuHamburger.style.display = "block"
-        menuHamburgerClose.style.display = "none"
-    });
-</script>
+<script src="script.js"></script>
 
 </html>

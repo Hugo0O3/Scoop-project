@@ -128,39 +128,59 @@ main {
 
 /* Header tablet */
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
     .navBar {
         display: none;
     }
 
     .navBarPasMobile {
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
         background-color: white;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         position: fixed;
-        height: 4rem;
+        height: 6rem;
         z-index: 10;
     }
 
-    .navBarPasMobile .logo {
+    .navbarLeftpasMobile {
+        display: flex;
+    }
+
+    .navBarPasMobile .logoPasMobile {
         text-align: center;
-        margin: 0 auto;
         color: var(--darkNavy);
         font-family: 'Space Mono';
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2.5rem;
+        line-height: 1rem;
         font-weight: 700;
         letter-spacing: -2.14px;
         text-decoration: none;
         padding: 0;
     }
 
-    .navBarPasMobile .nav-links {
+    .navBarPasMobile .nav-linksPasMobile {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navBarPasMobile .nav-linksPasMobile ul {
+        display: flex;
+        gap: 3rem;
+        padding-left: 20%;
+    }
+
+    .navBarPasMobile .nav-linksPasMobile li {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .navBarPasMobile .nav-linksPasMobile li a {
+        text-decoration: none;
         font-family: 'Space Mono';
         font-weight: 700;
         font-size: 0.938rem;
@@ -168,7 +188,7 @@ main {
         text-decoration: none;
         color: var(--dimGrey);
     }
-} */
+}
 
 /* Intro home */
 
