@@ -19,24 +19,28 @@
                 <a class="logo" href="index.html">scoot</a>
                 <section class="nav-links">
                     <ul>
-                        <li><a href="Scoop-Project/about.html">About</a></li>
-                        <li><a href="Scoop-Project/locations.html">Location</a></li>
-                        <li><a href="Scoop-Project/careers.html">Careers</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="locations.html">Location</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                     <a href="#explore" class="intro-getButton">Get Scootin</a>
                 </section>
             </nav>
-            <!-- <nav class="navBarPasMobile">
-                <a class="logo" href="index.html">scoot</a>
-                <section class="nav-links">
-                    <ul>
-                        <li><a href="Scoop-Project/about.html">About</a></li>
-                        <li><a href="Scoop-Project/locations.html">Location</a></li>
-                        <li><a href="Scoop-Project/careers.html">Careers</a></li>
-                    </ul>
+            <nav class="navBarPasMobile">
+                <section class="navbarLeftpasMobile">
+                    <a class="logoPasMobile" href="index.html">scoot</a>
+                    <section class="nav-linksPasMobile">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="locations.html">Location</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="boutonPasMobile">
                     <a href="#explore" class="intro-getButton">Get Scootin</a>
                 </section>
-            </nav> -->
+            </nav>
         </section>
     </header>
 
@@ -134,9 +138,9 @@
                 <section class="footerBottom-container">
                     <h2>scoot</h2>
                     <section class="footerBottom-links">
-                        <a href="Scoop-Project/about.html">About</a>
-                        <a href="Scoop-Project/locations.html">Location</a>
-                        <a href="Scoop-Project/careers.html">Careers</a>
+                        <a href="about.html">About</a>
+                        <a href="locations.html">Location</a>
+                        <a href="careers.html">Careers</a>
                     </section>
                     <section class="footerBottom-images">
                         <img src="images/facebookLogo.png" alt="facebookLogo">
@@ -149,25 +153,6 @@
     </footer>
 </body>
 
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
-    const menuHamburgerClose = document.querySelector(".menu-hamburger-close")
-    const opacity = document.querySelector(".opacity")
-
-    menuHamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile-menu')
-        opacity.style.display = "block"
-        menuHamburger.style.display = "none"
-        menuHamburgerClose.style.display = "block"
-    });
-
-    menuHamburgerClose.addEventListener('click', () => {
-        navLinks.classList.remove('mobile-menu')
-        opacity.style.display = "none"
-        menuHamburger.style.display = "block"
-        menuHamburgerClose.style.display = "none"
-    });
-</script>
+<script src="script.js"></script>
 
 </html>
