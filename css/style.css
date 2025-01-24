@@ -122,30 +122,52 @@ main {
     margin-left: 0;
 }
 
-/* Header tablet */
-
-/* @media (min-width: 431px) {
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .menu-hamburger,
-    .menu-hamburger-close {
-        display: none;
-    }
+.navBarPasMobile {
+    display: none;
 }
 
-@media (min-width: 768px) {
-    .navBar .logo {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+/* Header tablet */
+
+/* @media (min-width: 768px) {
+    .navBar {
+        display: none;
     }
 
-    .navBar .nav-links ul {}
+    .navBarPasMobile {
+        padding: 1rem 2rem;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        height: 4rem;
+        z-index: 10;
+    }
+
+    .navBarPasMobile .logo {
+        text-align: center;
+        margin: 0 auto;
+        color: var(--darkNavy);
+        font-family: 'Space Mono';
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 700;
+        letter-spacing: -2.14px;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    .navBarPasMobile .nav-links {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Space Mono';
+        font-weight: 700;
+        font-size: 0.938rem;
+        line-height: 1.563rem;
+        text-decoration: none;
+        color: var(--dimGrey);
+    }
 } */
 
 /* Intro home */
