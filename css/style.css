@@ -195,6 +195,11 @@ main {
         line-height: 1.563rem;
         text-decoration: none;
         color: var(--dimGrey);
+        transition: 0.3s ease;
+    }
+
+    .navBarPasMobile .nav-linksPasMobile li a:hover {
+        color: var(--yellow);
     }
 }
 
@@ -241,6 +246,13 @@ main {
     color: var(--white);
     text-decoration: none;
     margin: 0 auto;
+    transition: 0.3s ease-in-out;
+}
+
+.intro-getButton:hover {
+    color: var(--yellow);
+    background-color: white;
+    border: 5px solid var(--yellow);
 }
 
 .intro-fleche {
@@ -352,6 +364,18 @@ footer .footerTop {
     position: relative;
     z-index: 2;
     overflow: hidden;
+}
+
+footer .footerTop-telechargement {
+    transition: 0.3s ease;
+}
+
+footer .footerTop-telechargement a:hover svg path {
+    fill: white;
+}
+
+footer .footerTop-telechargement a:hover svg rect {
+    fill: var(--yellow);
 }
 
 footer .fondFooterTop-left,
